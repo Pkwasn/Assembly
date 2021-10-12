@@ -63,7 +63,7 @@ main proc
     
 	CLOSE_FILE:
     	mov eax, fileHandle
-		call CloseFile
+	call CloseFile
       
 	MY_EXIT:
 invoke ExitProcess, 0
