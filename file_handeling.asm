@@ -61,6 +61,12 @@ main proc
     call WriteString
     call Crlf
     
+    ;find the space hex value
+    mov edx, offset buffer[2]
+    mov ecx, 2
+    call ParseInteger32
+    call WriteDec
+    
 	CLOSE_FILE:
     	mov eax, fileHandle
 	call CloseFile
